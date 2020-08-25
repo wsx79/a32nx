@@ -17,6 +17,14 @@ class CDUDataIndexPage {
             ["<POINT", "FUNCTION>"]
         ])
 
+        mcdu.onLeftInput[0] = () => {
+            CDUPositionMonitorPage.ShowPage(mcdu);
+        }
+
+        mcdu.onLeftInput[1] = () => {
+            CDUIRSMonitor.ShowPage(mcdu)
+        }
+
         mcdu.onNextPage = () => {
             this.ShowPage2(mcdu)
         }
@@ -40,6 +48,7 @@ class CDUDataIndexPage {
             ["<WINDS"],
             ["SEC F-PLAN", ""],
             ["<WINDS"]
+            
         ])
 
         mcdu.onNextPage = () => {

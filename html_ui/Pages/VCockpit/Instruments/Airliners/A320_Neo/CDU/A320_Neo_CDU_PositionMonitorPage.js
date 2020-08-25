@@ -17,6 +17,14 @@ class CDUPositionMonitorPage {
             ["", "SEL"],
             ["←FREEZE[color]blue", "NAVAIDS>"]
         ]);
+
+        mcdu.onRightInput[5]= () => {
+            CDUSelectedNavaids.ShowPage(mcdu)
+        }
+
+        mcdu.onLeftInput[5] = () => {
+            CDUPosFrozen.ShowPage(mcdu, currPos)
+        }
     }
 }
 //# sourceMappingURL=A320_Neo_CDU_PositionMonitorPage.js.map

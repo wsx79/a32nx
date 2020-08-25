@@ -34,7 +34,7 @@ class A320_Neo_CDU_MainDisplay extends FMCMainDisplay {
         this.onRad = () => { CDUNavRadioPage.ShowPage(this); };
         this.onFuel = () => { CDUFuelPredPage.ShowPage(this); };
         this.onMcdu = () => { CDUMenuPage.ShowPage(this) };
-        CDUTestingPage.Init(this);
+        CDUIdentPage.ShowPage(this);
     }
     onPowerOn() {
         super.onPowerOn();
