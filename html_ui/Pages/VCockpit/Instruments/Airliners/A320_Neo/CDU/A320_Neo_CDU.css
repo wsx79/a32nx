@@ -10,6 +10,16 @@
   0%, 100% {
     visibility: hidden; } }
 
+#SystemTesting {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
 #highlight {
   position: absolute;
   height: 100%;

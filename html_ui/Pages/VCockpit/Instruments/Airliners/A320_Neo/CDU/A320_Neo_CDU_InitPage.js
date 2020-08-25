@@ -80,7 +80,7 @@ class CDUInitPage {
             ["CRZ FL/TEMP", "TROPO"],
             [cruiseFlTemp, "36090[color]blue"]
         ]);
-        mcdu.onLeftInput[0] = async () => {
+        mcdu.onLeftInput[0] = () => {
             let value = mcdu.inOut;
             mcdu.clearUserInput();
             mcdu.updateCoRoute(value, (result) => {

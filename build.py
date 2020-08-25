@@ -17,6 +17,8 @@ for root, _, files in os.walk(cwd):
         if not filepath.endswith(".json") and not filepath.endswith(".py"):
             rel_dir = os.path.relpath(root)
             rel_file = str(os.path.join(rel_dir, filename))
+            if rel_file.split('\\')[0] == '.git':
+                continue
             if rel_file[0] == '.':
                 rel_file = rel_file[2:]
 
