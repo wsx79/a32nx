@@ -10,7 +10,7 @@ class CDUWaypointPage {
         mcdu.setTemplate([
             ["WAYPOINT"],
             ["IDENT"],
-            ["□□□□□□□"],
+            ["□□□□□□□[color]red"],
             [""],
             [""],
             [""],
@@ -35,7 +35,7 @@ class CDUWaypointPage {
                         ["IDENT"],
                         [`${INPUT}`],
                         ["LAT/LONG"],
-                        [`${new LatLong(res.infos.coordinates.lat, res.infos.coordinates.long)}[color]green`],
+                        [`${new LatLong(res.infos.coordinates.lat, res.infos.coordinates.long).toShortDegreeString()}[color]green`],
                         [""],
                         [""],
                         [""],
