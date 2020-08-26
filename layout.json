@@ -12,7 +12,7 @@
         },
         {
             "path": "html_ui/Pages/VCockpit/Instruments/Airliners/A320_Neo/CDU/A320_Neo_CDU.html",
-            "size": 5393,
+            "size": 5525,
             "date": "132402817714110148"
         },
         {
@@ -37,7 +37,7 @@
         },
         {
             "path": "html_ui/Pages/VCockpit/Instruments/Airliners/A320_Neo/CDU/A320_Neo_CDU_DataIndexPage.js",
-            "size": 1743,
+            "size": 1933,
             "date": "132402817714110148"
         },
         {
@@ -62,7 +62,7 @@
         },
         {
             "path": "html_ui/Pages/VCockpit/Instruments/Airliners/A320_Neo/CDU/A320_Neo_CDU_IdentPage.js",
-            "size": 562,
+            "size": 634,
             "date": "132402817714110148"
         },
         {
@@ -133,6 +133,11 @@
         {
             "path": "html_ui/Pages/VCockpit/Instruments/Airliners/A320_Neo/CDU/A320_Neo_CDU_VerticalRevisionPage.js",
             "size": 1383,
+            "date": "132402817714110148"
+        },
+        {
+            "path": "html_ui/Pages/VCockpit/Instruments/Airliners/A320_Neo/CDU/A320_Neo_CDU_WaypointPage.js",
+            "size": 1503,
             "date": "132402817714110148"
         },
         {
