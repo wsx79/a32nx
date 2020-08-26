@@ -4,11 +4,11 @@ class CDUGPSMonitor {
         let TTRK = SimVar.GetSimVarValue("GPS GROUND MAGNETIC TRACK", "radians") || "000";
         let GROUNDSPEED = SimVar.GetSimVarValue("GPS GROUND SPEED", "Meters per second") || "0";
         let ALTITUDE = SimVar.GetSimVarValue("INDICATED ALTITUDE", "Feet") || "0";
-        
+
         var UTC_SECONDS  = Math.floor(SimVar.GetGlobalVarValue("ZULU TIME", "seconds"));
         var hours = Math.floor(UTC_SECONDS / 3600) || 0
-        var minutes = Math.floor(UTC_SECONDS - (hours*3600) / 60) || 0
-        var seconds = Math.floor(UTC_SECONDS - (hours*3600) - (minutes*60)) || 0
+        var minutes = Math.floor(UTC_SECONDS % 3600 / 60) || 0
+        var seconds = Math.floor(UTC_SECONDS % 3600 % 60) || 0
 
         var UTC = `${hours.toString().padStart(2, "0") || "00"}:${minutes.toString().padStart(2, "0") || "00"}:${seconds.toString().padStart(2, "0") || "00"}`
 
