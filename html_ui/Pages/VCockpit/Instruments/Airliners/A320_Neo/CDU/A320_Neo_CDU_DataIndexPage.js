@@ -25,6 +25,10 @@ class CDUDataIndexPage {
             CDUIRSMonitor.ShowPage(mcdu)
         }
 
+        mcdu.onLeftInput[2] = () => {
+            CDUGPSMonitor.ShowPage(mcdu)
+        }
+
         mcdu.onNextPage = () => {
             this.ShowPage2(mcdu)
         }
@@ -37,7 +41,7 @@ class CDUDataIndexPage {
         mcdu.setTemplate([
             ["DATA INDEX", "2", "2"],
             ["", "PILOTS"],
-            ["<WAYPOINTS", "WAYPOINTS>"]
+            ["<WAYPOINTS", "WAYPOINTS>"],
             ["", "PILOTS"],
             ["<NAVAIDS", "NAVAIDS>"],
             ["", "PILOTS"],

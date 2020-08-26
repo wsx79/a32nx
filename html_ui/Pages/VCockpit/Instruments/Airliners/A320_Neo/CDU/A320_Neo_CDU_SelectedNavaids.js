@@ -3,7 +3,7 @@ class CDUSelectedNavaids {
         mcdu.clearDisplay()
 
         mcdu.setTemplate([
-            ["SELECTED NAVAIDS"]
+            ["SELECTED NAVAIDS"],
             ["VOR/TAC", "DESELECT", "AUTO"],
             [``, `[  ]*[color]blue`, ""],
             [""],

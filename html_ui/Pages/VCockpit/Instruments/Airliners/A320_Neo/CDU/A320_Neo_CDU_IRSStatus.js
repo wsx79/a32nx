@@ -19,8 +19,8 @@ class CDUIRSStatus {
             ["WIND", "GPIRS ACCUR"],
             [`${Math.round(WIND_DIR)}°/${Math.round(WIND_VELOCITY)}[color]green`, `200FT[color]green`],
             ["GPIRS POSITION"],
-            [`${currPos}[color]green`]
-            [""],
+            [`${currPos}[color]green`],
+            ["", ""],
             ["←FREEZE[color]blue", `${index<3 ? "NEXT IRS>" : "RETURN>"}`]
         ])
 
@@ -29,7 +29,7 @@ class CDUIRSStatus {
                 CDUIRSMonitor.ShowPage(mcdu);
             } 
             else {
-            this.ShowPage(mcdu, Math.max(index+1, 3))
+            this.ShowPage(mcdu, index+1)
             }
         }
     }

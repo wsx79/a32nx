@@ -21,9 +21,9 @@ class CDUIRSMonitor {
             [""],
             ["<IRS1"],
             [`${IRSStatus}[color]green`],
-            ["<IRS1"],
+            ["<IRS2"],
             [`${IRSStatus}[color]green`],
-            ["<IRS1"],
+            ["<IRS3"],
             [`${IRSStatus}[color]green`],
         ])
 
